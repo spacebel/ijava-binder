@@ -33,7 +33,7 @@ RUN adduser --disabled-password \
 COPY . $HOME
 RUN chown -R $NB_UID $HOME
 
-COPY lib/wpsc.jar /usr/local/lib/wpsc.jar
+COPY lib/wpsc.jar /usr/share/jupyter/kernels/java/wpsc.jar
 
 USER $NB_USER
 
